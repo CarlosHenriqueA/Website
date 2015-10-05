@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WIKI Page</title>
+    
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +000 000 00 00</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="wikipage.html">Blog </a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="shortcodes.html">Shortcodes</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="wikipage.html">WikiPage</a></li> 
+                        <li><a href="contact-us.html">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+        
+    </header><!--/header-->
+
+    <section id="wiki" class="container">
+        <div class="center">
+            <h2>Wiki page</h2>
+            <p class="lead">Deploy-Atividades</p>
+        </div>
+            <div class="col-md-12">
+                    <div class="wikipage"><a href="wikipage.html"></a>
+                        <div class="row">
+							<div class="center">
+								<div>
+									<div>
+										<h2><a href="wikipage.html"></a></h2>
+										<h3><strong> Instalação do Servidor</strong></h3>
+										<p><strong>Instalação do Apache + PHP + MySQL - LAMP</strong></p>
+										<p>
+											O "LAMP" é um grupo de software de código aberto que é normalmente instalado em conjunto para permitir que um servidor para hospedar sites dinâmicos e aplicações web.
+											Este termo é na verdade um acrônimo que representa o L sistema operacional Linux, com um servidor web Apache.
+											O banco de dados é armazenado no MySQL base de dados, e um conteúdo dinâmico é processado por PHP.
+										</p>
+										<p><h1></h1>Passo 1 – Instalar Apache</h1></p>
+										<p>
+											O servidor web Apache é atualmente o servidor web mais popular do mundo, o que o torna uma ótima opção padrão para hospedagem de um site.
+											Podemos instalar Apache facilmente usando o gerenciador de pacotes do Ubuntu, apt .
+										</p>
+										<p><strong>Digite os seguintes comandos:</strong></p>
+										<table border="1" style="width:100%">
+											<tr>
+												<td>sudo apt-get update</td>
+												<td>sudo apt-get install apache2</td>
+											</tr>
+											</table>
+										<p><strong>Verifique se o servidor está escutando na porta 80::</strong></p>
+
+										<table border="1" style="width:100%">
+										<tr>
+											<td>netstat -ntlup</td>
+										</tr>
+										</table>
+										<p>** Não esqueça de liberar o trafego para a porta 80 para o servidor, lembrando que caso esteja utilizando algum serviço de nuvem, 
+										lembre-se que o trafego para as portas devem ser implementados.</p>
+
+										<p>Faça o teste no browser e você deverá ver a tela abaixo:</p>
+										<table border="1" style="width:100%">
+											<tr>
+												<td>http://ip_do_servidor</td>
+											</tr>
+										</table>
+										<img src="imagemservidor.jpg" style="width:500px;height:500px;">
+
+										<h3><strong>Manuseio do Github:</strong></h3>
+										<p><strong>Instalação E Criação do Repositório:</strong></p>
+
+										    <p>Acesso ao Github via login no prompt do GIT:</p>
+											<table border="1"  style="width:100%">
+												<tr>
+													<td>$ git config --global user.name “maria"</td>
+													<td> $ git config --global user.email meuemail@email.com</td>
+												</tr>
+											</table>
+
+										<p>Criado Diretório e pasta do Mesmo:</p>
+										<table border="1" style="width:100%">
+											<tr>
+												<td>mkdir leonardo</td>
+											</tr>
+										</table>
+										<p>Transformando o diretório atual em um repositório do Git:</p>
+										<p>Jogou o arquivo dentro da pasta criada.</p>
+                                        <h1></h1><!--espaço para separa texto-->
+										<table border="1" style="width:100%">
+											<tr>
+												<td>git status (visulaiza mudanças criadas)</td>
+											</tr>
+										</table>
+                                        <h1></h1><!--espaço para separa texto-->
+										<table border="1" style="width:100%">
+											<tr>
+												<td>git add -a(adicionou toda mudança criada)</td>
+											</tr>
+										</table>
+                                        <h1></h1><!--espaço para separa texto-->
+										<table border="1" style="width:100%">
+											<tr>
+												<td>git commit -m (adiciona arquivos)</td>
+											</tr>
+										</table>
+                                        <h1></h1><!--espaço para separa texto-->
+										<table border="1" style="width:100%">
+										<tr>
+											<td>git push (subir para servidor)</td>
+										</tr>
+										</table>
+                                        <h1></h1><!--espaço para separa texto-->
+                                        <table border="1" style="width:100%">
+                                            <tr>
+                                                <td>cd leonardo (entrar no repositorio criado)</td>
+                                            </tr>
+                                        </table>
+                                        <h1></h1><!--espaço para separa texto-->
+                                        <table border="1" style="width:100%">
+                                            <tr>
+                                                <td>ls -a (lista arquivos dentro da pasta)</td>
+                                            </tr>
+                                        </table>
+                            </div>
+								</div>
+							</div>                
+                     <!--paginas-->   
+                </div><!--/.col-md-8-->
+            </div><!--/.row-->
+        </div>
+    </section><!--/#wiki--> 
+			<script src="js/jquery.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.prettyPhoto.js"></script>
+			<script src="js/jquery.isotope.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/wow.min.js"></script>
+</body>
+</html>
